@@ -1,752 +1,716 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Nutritionist</title>
-        <!-- CSS -->
-        <link rel="stylesheet" href="./assets/css/reset.css" />
-        <link rel="stylesheet" href="./assets/css/styles.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutritionist</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet"
-        />
-    </head>
-    <body>
-        <main>
-            <!-- Announcement Bar -->
-            <div class="announcement-bar">
-                <div class="announcement-bar__content">
-                    <img
-                        src="./assets/img/announcement-bar__decor--left.svg"
-                        alt=""
-                        class="announcement-bar__decor--left"
-                    />
-                    <div class="announcement-bar__inner">
-                        <img
-                            src="./assets/img/icon.svg"
-                            alt=""
-                            class="announcement-bar__icon"
-                        />
-                        <span class="announcement-bar__text">
-                            Join Our Personalized Nutrition Demo For Free
-                        </span>
-                        <img
-                            src="./assets/img/arrow.svg"
-                            alt=""
-                            class="announcement-bar__arrow"
-                        />
-                    </div>
-                    <img
-                        src="./assets/img/announcement-bar__decor--right.svg"
-                        alt=""
-                        class="announcement-bar__decor--right"
-                    />
-                </div>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- Announcement Bar -->
+      <div class="announcement-bar">
+        <div class="announcement-bar__content">
+          <img
+            src="./assets/img/announcement-bar__decor--left.svg"
+            alt=""
+            class="announcement-bar__decor--left"
+          />
+          <div class="announcement-bar__inner">
+            <img
+              src="./assets/img/icon.svg"
+              alt=""
+              class="announcement-bar__icon"
+            />
+            <span class="announcement-bar__text">
+              Join Our Personalized Nutrition Demo For Free
+            </span>
+            <img
+              src="./assets/img/arrow.svg"
+              alt=""
+              class="announcement-bar__arrow"
+            />
+          </div>
+          <img
+            src="./assets/img/announcement-bar__decor--right.svg"
+            alt=""
+            class="announcement-bar__decor--right"
+          />
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <div class="navbar">
+        <div class="navbar-content">
+          <a href="#" class="navbar_brand" aria-label="Nutritionist home">
+            <img
+              src="./assets/img/logo_brand.svg"
+              alt="Nutritionist"
+              class="navbar_logo"
+            />
+          </a>
+
+          <nav
+            class="navbar_nav"
+            id="primary-navigation"
+            aria-label="Primary navigation"
+          >
+            <ul class="navbar_list">
+              <li class="navbar_item"><a href="#">Home</a></li>
+              <li class="navbar_item"><a href="#about">About</a></li>
+              <li class="navbar_item"><a href="#team">Team</a></li>
+              <li class="navbar_item">
+                <a href="#process">Process</a>
+              </li>
+              <li class="navbar_item">
+                <a href="#pricing">Pricing</a>
+              </li>
+              <li class="navbar_item"><a href="#blog">Blog</a></li>
+            </ul>
+
+            <a href="#contact" class="navbar__button">Contact Us</a>
+          </nav>
+
+          <button
+            class="navbar-menu"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Pricing Hero -->
+      <div class="pricing-hero">
+        <div class="pricing-hero_content">
+          <img
+            src="./assets/img/Abstract Design.svg"
+            alt=""
+            class="pricing-hero_decor"
+          />
+          <img
+            src="./assets/img/pricing-hero__icon.svg"
+            alt=""
+            class="pricing-hero_logo"
+          />
+
+          <h1 class="pricing-hero__title">Our Pricing</h1>
+
+          <p class="pricing-hero__desc">
+            At Nutritionist, we offer flexible pricing options to accommodate
+            your unique requirements and budget. Our goal is to provide you with
+            exceptional personalized nutrition coaching that is accessible and
+            tailored to your needs. Choose from our three plans below and take
+            the first step towards a healthier lifestyle
+          </p>
+        </div>
+      </div>
+
+      <!-- Pricing Plans -->
+      <div class="pricing-plans" id="pricing">
+        <div class="pricing-plans_toggle">
+          <button
+            class="pricing-plans_toggle-btn pricing-plans_toggle-active"
+            type="button"
+          >
+            Monthly
+          </button>
+          <button class="pricing-plans_toggle-btn" type="button">Yearly</button>
+        </div>
+
+        <p class="pricing-plans__note">Save 50% on Yearly</p>
+
+        <div class="pricing-plans__list">
+          <div class="pricing-card">
+            <div class="pricing-card_content">
+              <h2 class="pricing-card__title">Basic Plan</h2>
+              <p class="pricing-card__subtitle">Up to 50% off on Yearly Plan</p>
+              <ul class="pricing-card__features">
+                <li class="pricing-card__feature">
+                  Personalized nutrition plan tailored to your goals and dietary
+                  preferences.
+                </li>
+                <li class="pricing-card__feature">
+                  Access to our mobile app for convenient meal tracking and
+                  progress monitoring.
+                </li>
+                <li class="pricing-card__feature">
+                  Email support to address your questions and concerns.
+                </li>
+                <li class="pricing-card__feature">
+                  Regular check-ins with a dedicated nutritionist to review your
+                  progress and provide guidance.
+                </li>
+              </ul>
+
+              <div class="pricing-card__price">
+                <span class="pricing-card__amount">$49</span>
+                <span class="pricing-card__period">/month</span>
+              </div>
+
+              <a href="#" class="pricing-card__button">Choose Plan</a>
             </div>
+          </div>
 
-            <!-- Navbar -->
-            <div class="navbar">
-                <div class="navbar-content">
-                    <a href="#" class="navbar_brand">
-                        <img
-                            src="./assets/img/logo_brand.svg"
-                            alt=""
-                            class="navbar_logo"
-                        />
-                    </a>
+          <div class="pricing-card">
+            <div class="pricing-card_content">
+              <h2 class="pricing-card__title">Premium Plan</h2>
+              <p class="pricing-card__subtitle">Up to 50% off on Yearly Plan</p>
+              <ul class="pricing-card__features">
+                <li class="pricing-card__feature">
+                  All the features included in the Basic Plan.
+                </li>
+                <li class="pricing-card__feature">
+                  One-on-one video consultations with your dedicated
+                  nutritionist for more personalized guidance and support.
+                </li>
+                <li class="pricing-card__feature">
+                  Recipe recommendations and meal planning assistance.
+                </li>
+                <li class="pricing-card__feature">
+                  Priority email support for quicker responses to your
+                  inquiries.
+                </li>
+                <li class="pricing-card__feature">
+                  Educational resources and guides to deepen your understanding
+                  of nutrition and healthy habits.
+                </li>
+              </ul>
 
-                    <nav class="navbar_nav">
-                        <ul class="navbar_list">
-                            <li class="navbar_item">Home</li>
-                            <li class="navbar_item">About</li>
-                            <li class="navbar_item">Team</li>
-                            <li class="navbar_item">Process</li>
-                            <li class="navbar_item">Pricing</li>
-                            <li class="navbar_item">Blog</li>
-                        </ul>
+              <div class="pricing-card__price">
+                <span class="pricing-card__amount">$79</span>
+                <span class="pricing-card__period">/month</span>
+              </div>
 
-                        <a href="#" class="navbar__button">Contact Us</a>
-                    </nav>
-                </div>
+              <a href="#" class="pricing-card__button">Choose Plan</a>
             </div>
+          </div>
 
-            <!-- Pricing Hero -->
-            <div class="pricing-hero">
-                <div class="pricing-hero_content">
-                    <img
-                        src="./assets/img/Abstract Design.svg"
-                        alt=""
-                        class="pricing-hero_decor"
-                    />
-                    <img
-                        src="./assets/img/pricing-hero__icon.svg"
-                        alt=""
-                        class="pricing-hero_logo"
-                    />
+          <div class="pricing-card">
+            <div class="pricing-card_content">
+              <h2 class="pricing-card__title">Ultimate Plan</h2>
+              <p class="pricing-card__subtitle">Up to 50% off on Yearly Plan</p>
+              <ul class="pricing-card__features">
+                <li class="pricing-card__feature">
+                  All the features included in the Plus Plan.
+                </li>
+                <li class="pricing-card__feature">
+                  Unlimited access to video consultations with your dedicated
+                  nutritionist for ongoing support and accountability.
+                </li>
+                <li class="pricing-card__feature">
+                  Advanced progress tracking tools to monitor your weight, body
+                  measurements, and fitness goals.
+                </li>
+                <li class="pricing-card__feature">
+                  Customized meal plans and recipe suggestions based on your
+                  preferences and nutritional needs.
+                </li>
+                <li class="pricing-card__feature">
+                  Priority email and phone support for immediate assistance.
+                </li>
+              </ul>
 
-                    <h1 class="pricing-hero__title">Our Pricing</h1>
+              <p class="pricing-card__highlight">
+                The Premium Plan is designed for individuals who are committed
+                to achieving significant results and require the highest level
+                of support and personalization.
+              </p>
 
-                    <p class="pricing-hero__desc">
-                        At Nutritionist, we offer flexible pricing options to
-                        accommodate your unique requirements and budget. Our
-                        goal is to provide you with exceptional personalized
-                        nutrition coaching that is accessible and tailored to
-                        your needs. Choose from our three plans below and take
-                        the first step towards a healthier lifestyle
-                    </p>
-                </div>
+              <div class="pricing-card__price">
+                <span class="pricing-card__amount">$99</span>
+                <span class="pricing-card__period">/month</span>
+              </div>
+
+              <a href="#" class="pricing-card__button">Choose Plan</a>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <!-- Pricing Plans -->
-            <div class="pricing-plans">
-                <div class="pricing-plans_toggle">
-                    <button
-                        class="pricing-plans_toggle-btn pricing-plans_toggle-active"
-                    >
-                        Monthly
-                    </button>
-                    <button class="pricing-plans_toggle-btn">Yearly</button>
+      <!-- Pricing Comparison -->
+      <div class="pricing-comparison">
+        <table class="pricing-comparison_table">
+          <thead>
+            <tr class="pricing-comparison_row">
+              <th class="pricing-comparison__heading">
+                <div class="pricing-comparison__heading-box">Features</div>
+              </th>
+              <th class="pricing-comparison__heading">
+                <div class="pricing-comparison__heading-box">Free Plan</div>
+              </th>
+              <th class="pricing-comparison__heading">
+                <div class="pricing-comparison__heading-box">Free Plan</div>
+              </th>
+              <th class="pricing-comparison__heading">
+                <div class="pricing-comparison__heading-box">Free Plan</div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="pricing-comparison_row">
+              <td class="pricing-comparison__feature">
+                Personalized Nutrition Plan
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_check.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_check.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_check.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+            </tr>
+
+            <tr class="pricing-comparison_row">
+              <td class="pricing-comparison__feature">Mobile App Access</td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_check.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_check.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_check.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+            </tr>
+
+            <tr class="pricing-comparison_row">
+              <td class="pricing-comparison__feature">Email Support</td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_check.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_check.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_check.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+            </tr>
+
+            <tr class="pricing-comparison_row">
+              <td class="pricing-comparison__feature">
+                One -on One Video Consultations
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_cross.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_check.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_check.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+            </tr>
+
+            <tr class="pricing-comparison_row">
+              <td class="pricing-comparison__feature">
+                Recipe Recommendations and Meal Planning
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_cross.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_check.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_check.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+            </tr>
+
+            <tr class="pricing-comparison_row">
+              <td class="pricing-comparison__feature">Priority Support</td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_cross.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_check.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_check.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+            </tr>
+
+            <tr class="pricing-comparison_row">
+              <td class="pricing-comparison__feature">
+                Educational Resources and Guides
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_cross.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_check.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_check.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+            </tr>
+
+            <tr class="pricing-comparison_row">
+              <td class="pricing-comparison__feature">
+                Advanced Progress Tracking Tools
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_cross.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_cross.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_check.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+            </tr>
+
+            <tr class="pricing-comparison_row">
+              <td class="pricing-comparison__feature">
+                Customized Meal Plans and Recipe Suggestions
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_cross.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_cross.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_check.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+            </tr>
+
+            <tr class="pricing-comparison_row">
+              <td class="pricing-comparison__feature">Phone Support</td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_cross.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_cross.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+              <td class="pricing-comparison__cell">
+                <img
+                  src="./assets/img/icon_check.svg"
+                  alt=""
+                  class="pricing-comparison__icon"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- FAQ -->
+      <div class="faq">
+        <div class="faq-header">
+          <h2 class="faq-title">FAQ</h2>
+          <p class="faq-desc">
+            We address commonly asked questions and provide comprehensive
+            answers to help you navigate your way through your nutrition and
+            wellness journey.
+          </p>
+        </div>
+
+        <div class="faq-content">
+          <div class="faq-accordion">
+            <ul class="faq-questions">
+              <li class="faq-question_item">
+                <div class="faq-question_block">
+                  <h3 class="faq-question_title">
+                    What is personalized nutrition coaching?
+                  </h3>
+
+                  <p class="faq-question_desc">
+                    Personalized nutrition coaching involves creating a
+                    customized nutrition plan based on your unique goals,
+                    preferences, and dietary requirements. Our team of experts
+                    will work closely with you to develop a plan that fits your
+                    lifestyle and helps you achieve optimal health and wellness.
+                  </p>
                 </div>
 
-                <p class="pricing-plans__note">Save 50% on Yearly</p>
+                <a href="#!" aria-label="Collapse answer"
+                  ><img
+                    src="./assets/img/faq-button.svg"
+                    alt=""
+                    class="faq__button"
+                /></a>
+              </li>
+              <li class="faq-question_item">
+                <h3 class="faq-question_title">
+                  How can nutrition coaching help me lose weight?
+                </h3>
+                <a href="#!" aria-label="Expand answer"
+                  ><img
+                    src="./assets/img/faq-button_add.svg"
+                    alt=""
+                    class="faq__button"
+                /></a>
+              </li>
+              <li class="faq-question_item">
+                <h3 class="faq-question_title">
+                  Can I still enjoy my favorite foods while on a nutrition plan?
+                </h3>
+                <a href="#!" aria-label="Expand answer"
+                  ><img
+                    src="./assets/img/faq-button_add.svg"
+                    alt=""
+                    class="faq__button"
+                /></a>
+              </li>
+              <li class="faq-question_item">
+                <h3 class="faq-question_title">
+                  How often will I have contact with my nutritionist?
+                </h3>
+                <a href="#!" aria-label="Expand answer"
+                  ><img
+                    src="./assets/img/faq-button_add.svg"
+                    alt=""
+                    class="faq__button"
+                /></a>
+              </li>
+              <li class="faq-question_item">
+                <h3 class="faq-question_title">
+                  How long will it take to see results?
+                </h3>
+                <a href="#!" aria-label="Expand answer"
+                  ><img
+                    src="./assets/img/faq-button_add.svg"
+                    alt=""
+                    class="faq__button"
+                /></a>
+              </li>
+              <li class="faq-question_item">
+                <h3 class="faq-question_title">
+                  Are the meal plans and recipes provided suitable for
+                  vegetarians or vegans?
+                </h3>
+                <a href="#!" aria-label="Expand answer"
+                  ><img
+                    src="./assets/img/faq-button_add.svg"
+                    alt=""
+                    class="faq__button"
+                /></a>
+              </li>
+            </ul>
+          </div>
 
-                <div class="pricing-plans__list">
-                    <div class="pricing-card">
-                        <div class="pricing-card_content">
-                            <h2 class="pricing-card__title">Basic Plan</h2>
-                            <p class="pricing-card__subtitle">
-                                Up to 50% off on Yearly Plan
-                            </p>
-                            <ul class="pricing-card__features">
-                                <li class="pricing-card__feature">
-                                    Personalized nutrition plan tailored to your
-                                    goals and dietary preferences.
-                                </li>
-                                <li class="pricing-card__feature">
-                                    Access to our mobile app for convenient meal
-                                    tracking and progress monitoring.
-                                </li>
-                                <li class="pricing-card__feature">
-                                    Email support to address your questions and
-                                    concerns.
-                                </li>
-                                <li class="pricing-card__feature">
-                                    Regular check-ins with a dedicated
-                                    nutritionist to review your progress and
-                                    provide guidance.
-                                </li>
-                            </ul>
+          <div class="faq-ask_card">
+            <img src="./assets/img/faq-logo.svg" alt="" class="faq-logo" />
+            <h3 class="faq-ask_title">Ask your question</h3>
+            <p class="faq-ask_desc">Feel Free to Ask questions on anytime</p>
+            <a href="#!" class="faq-ask_btn">Ask A Question</a>
+          </div>
+        </div>
+      </div>
 
-                            <div class="pricing-card__price">
-                                <span class="pricing-card__amount">$49</span>
-                                <span class="pricing-card__period">\month</span>
-                            </div>
+      <!-- Footer -->
+      <footer class="footer" id="contact">
+        <div class="footer-top">
+          <a href="#!" class="footer-brand" aria-label="Nutritionist home">
+            <img
+              src="./assets/img/logo_brand.svg"
+              alt="Nutritionist"
+              class="footer-logo"
+            />
+          </a>
 
-                            <a href="#" class="pricing-card__button"
-                                >Choose Plan</a
-                            >
-                        </div>
-                    </div>
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a href="#!" class="footer-link">Home</a>
+              </li>
+              <li class="footer-item">
+                <a href="#!" class="footer-link">About</a>
+              </li>
+              <li class="footer-item">
+                <a href="#!" class="footer-link">Team</a>
+              </li>
+              <li class="footer-item">
+                <a href="#!" class="footer-link">Process</a>
+              </li>
+              <li class="footer-item">
+                <a href="#!" class="footer-link">Pricing</a>
+              </li>
+              <li class="footer-item">
+                <a href="#!" class="footer-link">Blog</a>
+              </li>
+              <li class="footer-item">
+                <a href="#!" class="footer-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
 
-                    <div class="pricing-card">
-                        <div class="pricing-card_content">
-                            <h2 class="pricing-card__title">Premium Plan</h2>
-                            <p class="pricing-card__subtitle">
-                                Up to 50% off on Yearly Plan
-                            </p>
-                            <ul class="pricing-card__features">
-                                <li class="pricing-card__feature">
-                                    All the features included in the Basic Plan.
-                                </li>
-                                <li class="pricing-card__feature">
-                                    One-on-one video consultations with your
-                                    dedicated nutritionist for more personalized
-                                    guidance and support.
-                                </li>
-                                <li class="pricing-card__feature">
-                                    Recipe recommendations and meal planning
-                                    assistance.
-                                </li>
-                                <li class="pricing-card__feature">
-                                    Priority email support for quicker responses
-                                    to your inquiries.
-                                </li>
-                                <li class="pricing-card__feature">
-                                    Educational resources and guides to deepen
-                                    your understanding of nutrition and healthy
-                                    habits.
-                                </li>
-                            </ul>
+          <a href="#" class="footer__back-to-top">
+            Got To Top
+            <img src="./assets/img/Back-to-top.svg" alt="" />
+          </a>
+        </div>
 
-                            <div class="pricing-card__price">
-                                <span class="pricing-card__amount">$79</span>
-                                <span class="pricing-card__period">\month</span>
-                            </div>
+        <div class="footer-bottom">
+          <div class="footer-contact_list">
+            <a href="mailto:hello@squareup.com" class="footer-contact_item"
+              ><img
+                src="./assets/img/mail.svg"
+                alt=""
+                class="footer-contact_icon"
+              />
+              <span class="footer-contact_text">hello@squareup.com</span></a
+            >
 
-                            <a href="#" class="pricing-card__button"
-                                >Choose Plan</a
-                            >
-                        </div>
-                    </div>
+            <a href="tel:+9191813232309" class="footer-contact_item"
+              ><img
+                src="./assets/img/phone.svg"
+                alt=""
+                class="footer-contact_icon"
+              />
+              <span class="footer-contact_text">+91 91813 23 2309</span></a
+            >
 
-                    <div class="pricing-card">
-                        <div class="pricing-card_content">
-                            <h2 class="pricing-card__title">Ultimate Plan</h2>
-                            <p class="pricing-card__subtitle">
-                                Up to 50% off on Yearly Plan
-                            </p>
-                            <ul class="pricing-card__features">
-                                <li class="pricing-card__feature">
-                                    All the features included in the Plus Plan.
-                                </li>
-                                <li class="pricing-card__feature">
-                                    Unlimited access to video consultations with
-                                    your dedicated nutritionist for ongoing
-                                    support and accountability.
-                                </li>
-                                <li class="pricing-card__feature">
-                                    Advanced progress tracking tools to monitor
-                                    your weight, body measurements, and fitness
-                                    goals.
-                                </li>
-                                <li class="pricing-card__feature">
-                                    Customized meal plans and recipe suggestions
-                                    based on your preferences and nutritional
-                                    needs.
-                                </li>
-                                <li class="pricing-card__feature">
-                                    Priority email and phone support for
-                                    immediate assistance.
-                                </li>
-                            </ul>
+            <a href="#!" class="footer-contact_item"
+              ><img
+                src="./assets/img/positon.svg"
+                alt=""
+                class="footer-contact_icon"
+              />
+              <span class="footer-contact_text">Somewhere in the World</span></a
+            >
+          </div>
 
-                            <p class="pricing-card__highlight">
-                                The Premium Plan is designed for individuals who
-                                are committed to achieving significant results
-                                and require the highest level of support and
-                                personalization.
-                            </p>
-
-                            <div class="pricing-card__price">
-                                <span class="pricing-card__amount">$99</span>
-                                <span class="pricing-card__period">\month</span>
-                            </div>
-
-                            <a href="#" class="pricing-card__button"
-                                >Choose Plan</a
-                            >
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Pricing Comparison -->
-            <div class="pricing-comparison">
-                <table class="pricing-comparison_table">
-                    <thead>
-                        <tr class="pricing-comparison_row">
-                            <th class="pricing-comparison__heading">
-                                <div class="pricing-comparison__heading-box">
-                                    Features
-                                </div>
-                            </th>
-                            <th class="pricing-comparison__heading">
-                                <div class="pricing-comparison__heading-box">
-                                    Free Plan
-                                </div>
-                            </th>
-                            <th class="pricing-comparison__heading">
-                                <div class="pricing-comparison__heading-box">
-                                    Free Plan
-                                </div>
-                            </th>
-                            <th class="pricing-comparison__heading">
-                                <div class="pricing-comparison__heading-box">
-                                    Free Plan
-                                </div>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="pricing-comparison_row">
-                            <td class="pricing-comparison__feature">
-                                Personalized Nutrition Plan
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_check.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_check.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_check.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                        </tr>
-
-                        <tr class="pricing-comparison_row">
-                            <td class="pricing-comparison__feature">
-                                Mobile App Access
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_check.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_check.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_check.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                        </tr>
-
-                        <tr class="pricing-comparison_row">
-                            <td class="pricing-comparison__feature">
-                                Email Support
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_check.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_check.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_check.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                        </tr>
-
-                        <tr class="pricing-comparison_row">
-                            <td class="pricing-comparison__feature">
-                                One -on One Video Consultations
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_cross.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_check.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_check.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                        </tr>
-
-                        <tr class="pricing-comparison_row">
-                            <td class="pricing-comparison__feature">
-                                Recipe Recommendations and Meal Planning
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_cross.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_check.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_check.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                        </tr>
-
-                        <tr class="pricing-comparison_row">
-                            <td class="pricing-comparison__feature">
-                                Priority Support
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_cross.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_check.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_check.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                        </tr>
-
-                        <tr class="pricing-comparison_row">
-                            <td class="pricing-comparison__feature">
-                                Educational Resources and Guides
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_cross.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_check.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_check.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                        </tr>
-
-                        <tr class="pricing-comparison_row">
-                            <td class="pricing-comparison__feature">
-                                Advanced Progress Tracking Tools
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_cross.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_cross.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_check.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                        </tr>
-
-                        <tr class="pricing-comparison_row">
-                            <td class="pricing-comparison__feature">
-                                Customized Meal Plans and Recipe Suggestions
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_cross.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_cross.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_check.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                        </tr>
-
-                        <tr class="pricing-comparison_row">
-                            <td class="pricing-comparison__feature">
-                                Phone Support
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_cross.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_cross.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                            <td class="pricing-comparison__cell">
-                                <img
-                                    src="./assets/img/icon_check.svg"
-                                    alt=""
-                                    class="pricing-comparison__icon"
-                                />
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <!-- FAQ -->
-            <div class="faq">
-                <div class="faq-header">
-                    <h2 class="faq-title">FAQ</h2>
-                    <p class="faq-desc">
-                        We address commonly asked questions and provide
-                        comprehensive answers to help you navigate your way
-                        through your nutrition and wellness journey.
-                    </p>
-                </div>
-
-                <div class="faq-content">
-                    <div class="faq-accordion">
-                        <ul class="faq-questions">
-                            <li class="faq-question_item">
-                                <div class="faq-question_block">
-                                    <h3 class="faq-question_title">
-                                        What is personalized nutrition coaching?
-                                    </h3>
-
-                                    <p class="faq-question_desc">
-                                        Personalized nutrition coaching involves
-                                        creating a customized nutrition plan
-                                        based on your unique goals, preferences,
-                                        and dietary requirements. Our team of
-                                        experts will work closely with you to
-                                        develop a plan that fits your lifestyle
-                                        and helps you achieve optimal health and
-                                        wellness.
-                                    </p>
-                                </div>
-
-                                <a href="#!"
-                                    ><img
-                                        src="./assets/img/faq-button.svg"
-                                        alt=""
-                                        class="faq__button"
-                                /></a>
-                            </li>
-                            <li class="faq-question_item">
-                                <h3 class="faq-question_title">
-                                    How can nutrition coaching help me lose
-                                    weight?
-                                </h3>
-                                <a href="#!"
-                                    ><img
-                                        src="./assets/img/faq-button_add.svg"
-                                        alt=""
-                                        class="faq__button"
-                                /></a>
-                            </li>
-                            <li class="faq-question_item">
-                                <h3 class="faq-question_title">
-                                    Can I still enjoy my favorite foods while on
-                                    a nutrition plan?
-                                </h3>
-                                <a href="#!"
-                                    ><img
-                                        src="./assets/img/faq-button_add.svg"
-                                        alt=""
-                                        class="faq__button"
-                                /></a>
-                            </li>
-                            <li class="faq-question_item">
-                                <h3 class="faq-question_title">
-                                    How often will I have contact with my
-                                    nutritionist?
-                                </h3>
-                                <a href="#!"
-                                    ><img
-                                        src="./assets/img/faq-button_add.svg"
-                                        alt=""
-                                        class="faq__button"
-                                /></a>
-                            </li>
-                            <li class="faq-question_item">
-                                <h3 class="faq-question_title">
-                                    How long will it take to see results?
-                                </h3>
-                                <a href="#!"
-                                    ><img
-                                        src="./assets/img/faq-button_add.svg"
-                                        alt=""
-                                        class="faq__button"
-                                /></a>
-                            </li>
-                            <li class="faq-question_item">
-                                <h3 class="faq-question_title">
-                                    Are the meal plans and recipes provided
-                                    suitable for vegetarians or vegans?
-                                </h3>
-                                <a href="#!"
-                                    ><img
-                                        src="./assets/img/faq-button_add.svg"
-                                        alt=""
-                                        class="faq__button"
-                                /></a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="faq-ask_card">
-                        <img
-                            src="./assets/img/faq-logo.svg"
-                            alt=""
-                            class="faq-logo"
-                        />
-                        <h3 class="faq-ask_title">Ask your question</h3>
-                        <p class="faq-ask_desc">
-                            Feel Free to Ask questions on anytime
-                        </p>
-                        <a href="#!" class="faq-ask_btn">Ask A Question</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Footer -->
-            <footer class="footer">
-                <div class="footer-top">
-                    <a href="#!" class="footer-brand"
-                        ><img
-                            src="./assets/img/logo_brand.svg"
-                            alt=""
-                            class="footer-logo"
-                    /></a>
-
-                    <nav class="footer-nav">
-                        <ul class="footer-list">
-                            <li class="footer-item">
-                                <a href="#!" class="footer-link">Home</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="#!" class="footer-link">About</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="#!" class="footer-link">Team</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="#!" class="footer-link">Process</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="#!" class="footer-link">Pricing</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="#!" class="footer-link">Blog</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="#!" class="footer-link">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                    <a href="#" class="footer__back-to-top">
-                        Got To Top
-                        <img src="./assets/img/Back-to-top.svg" alt="" />
-                    </a>
-                </div>
-
-                <div class="footer-bottom">
-                    <div class="footer-contact_list">
-                        <a
-                            href="mailto:hello@squareup.com"
-                            class="footer-contact_item"
-                            ><img
-                                src="./assets/img/mail.svg"
-                                alt=""
-                                class="footer-contact_icon"
-                            />
-                            <span class="footer-contact_text"
-                                >hello@squareup.com</span
-                            ></a
-                        >
-
-                        <a href="tel:+9191813232309" class="footer-contact_item"
-                            ><img
-                                src="./assets/img/phone.svg"
-                                alt=""
-                                class="footer-contact_icon"
-                            />
-                            <span class="footer-contact_text"
-                                >+91 91813 23 2309</span
-                            ></a
-                        >
-
-                        <a href="#!" class="footer-contact_item"
-                            ><img
-                                src="./assets/img/positon.svg"
-                                alt=""
-                                class="footer-contact_icon"
-                            />
-                            <span class="footer-contact_text"
-                                >Somewhere in the World</span
-                            ></a
-                        >
-                    </div>
-
-                    <p class="footer__copyright">
-                        © 2023 Nutritionist. All rights reserved.
-                    </p>
-                </div>
-            </footer>
-        </main>
-    </body>
+          <p class="footer__copyright">
+            &copy; 2023 Nutritionist. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
